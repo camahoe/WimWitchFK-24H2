@@ -7,7 +7,7 @@ I am not good at coding/scriping and have never used github before, but I have m
 
 Note: New Outlook and Dev Home are not removable via this method.
 
-To remove New Outlook, log into your image and run "Get-AppxPackage -AllUsers | Where-Object {$_.Name -Like '*OutlookForWindows*'} | Remove-AppxPackage -AllUsers"
+To remove New Outlook, log into your image and run Get-AppxPackage -AllUsers | Where-Object {$_.Name -Like '*OutlookForWindows*'} | Remove-AppxPackage -AllUsers
 
 Instructions:
 1. Install the WimWitchFK module via PowerShell
