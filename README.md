@@ -5,7 +5,7 @@ I am not good at coding/scriping and have never used github before, but I have m
 - Download and apply 24H2 updates via OSDSUS/OSDUpdate
 - 24H2-specific app removal
 
-Note: New Outlook and Dev Home are not removable via this method.
+Note: New Outlook is not removable via this method.
 
 To remove New Outlook, log into your image and run 
 
