@@ -5,6 +5,8 @@ I am not good at coding/scriping and have never used github before, but I have m
 - Download and apply 24H2 updates via OSDSUS/OSDUpdate
 - 24H2-specific app removal
 
+Note: New Outlook and Dev Home are not removable via this method, add the Remove_Outlook_Devhome.reg file into WIMWitch to stop Windows from downloading and installing these.
+
 Instructions:
 1. Install the WimWitchFK module via PowerShell
 2. Copy the WIMWitchFK.ps1 script to C:\Program Files\WindowsPowerShell\Modules\WIMWitchFK\4.0.1\Public
