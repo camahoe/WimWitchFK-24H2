@@ -5,9 +5,11 @@ I am not good at coding/scriping and have never used github before, but I have m
 - Download and apply 24H2 updates via OSDSUS/OSDUpdate
 - 24H2-specific app removal
 
-Note: New Outlook is not removable via this method.
+Note: New Outlook and Dev Home are not removable via this method.
 
-To remove New Outlook, log into your image and run (unsure if both have to be run, I'd rather be safe than sorry):
+To remove New Outlook:
+- Run the Remove_Outlook_Devhome.reg file on your image or (preferred) inject it into your wim via WimWitch (this will remove Dev Home completely, but not Outlook)
+- Run the following commands when logged into your image (unsure if both need to be run, but I'd rather be safe than sorry):
 
 ```
 Get-AppxProvisionedPackage -Online | ? DisplayName -like '*OutlookForWindows*' | Remove-AppxProvisionedPackage -Online
