@@ -5,7 +5,9 @@ I am not good at coding/scriping and have never used github before, but I have m
 - Download and apply 24H2 updates via OSDSUS/OSDUpdate
 - 24H2-specific app removal
 
-Note: New Outlook and Dev Home are not removable via this method. I'm still working on a way to accomplish this.
+Note: New Outlook and Dev Home are not removable via this method.
+
+To remove New Outlook, log into your image and run "Get-AppxPackage -AllUsers | Where-Object {$_.Name -Like '*OutlookForWindows*'} | Remove-AppxPackage -AllUsers"
 
 Instructions:
 1. Install the WimWitchFK module via PowerShell
