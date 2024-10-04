@@ -7,7 +7,12 @@ I am not good at coding/scriping and have never used github before, but I have m
 
 Note: New Outlook is not removable via this method.
 
-To remove New Outlook, log into your image and run 
+To remove New Outlook, log into your image and run (unsure if both have to be run, I'd rather be safe than sorry):
+
+```
+Get-AppxProvisionedPackage -Online | ? DisplayName -like '*OutlookForWindows*' | Remove-AppxProvisionedPackage -Online
+```
+and
 
 ```
 Get-AppxPackage -AllUsers | Where-Object {$_.Name -Like '*OutlookForWindows*'} | Remove-AppxPackage -AllUsers
